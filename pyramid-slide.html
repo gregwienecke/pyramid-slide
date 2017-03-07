@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #pyramid {
+            line-height: 0;
+            font-size: 30px;
+            border: 1px solid Orchid;
+            width: 39.9%;
+            background-color: #eee;
+            margin: auto;
+        }
+
+        body {
+            font-family: "Courier New", monospace;
+            text-align: center;
+        }
+
+        h1 {
+            background: Orchid;
+            color: white;
+            padding: 20px 0 20px 0;
+            width: 40%;
+            margin: auto;
+        }
+
+        #menu {
+            background-color: #bbb;
+            padding: 15px 0 15px 0;
+            color: white;
+            width: 40%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body >
+    
+    <h1>Pyramid Slide</h1>
+    <div id="menu">
+        <label>Brick Symbol:</label>
+        <select>
+            <option>#</option>
+            <option>@</option>
+            <option>X</option>
+            <option>$</option>
+        </select>
+
+        <label>How high?</label>
+        <input type="range" id="height" min="1" max="20" oninput="showValAndDrawPyramid(this.value)"><span id="sliderVal"></span>
+    </div>
+
+
+    <div id="pyramid"></div>
+
+    <script src="pyramid-slide.js"></script>
+</body>
+</html>
