@@ -58,3 +58,6 @@ function drawPyramid(height) {
         document.getElementById("pyramid").appendChild(rowElem);
     }
 }
+
+document.getElementById('sliderVal').innerHTML = "10";
+drawPyramid(10);
